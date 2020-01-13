@@ -7,6 +7,9 @@ enable_testing()
 add_executable(demo1 demo1.c)
 add_test(test-demo1 demo1)
 
+add_executable(mycat mycat.cc)
+add_executable(mycurl mycurl.cc)
+
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
